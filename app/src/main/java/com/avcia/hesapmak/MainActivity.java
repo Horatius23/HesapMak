@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     EditText input1;
     EditText input2;
     TextView resultText;
-
+//Variable types converted to Double
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
