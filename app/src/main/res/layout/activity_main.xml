@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="174dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="218dp"
-        android:hint="Result"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
     <EditText
         android:id="@+id/input2"
         android:layout_width="212dp"
@@ -29,9 +15,9 @@
         android:hint="input 2"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input1"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/input1"
         app:layout_constraintTop_toBottomOf="@+id/input1" />
 
     <EditText
@@ -51,17 +37,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="56dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/resultText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input2">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/button3"
@@ -92,5 +74,16 @@
             android:text="x" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="224dp"
+        android:layout_height="61dp"
+        android:hint="Result"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/input2"
+        app:layout_constraintStart_toStartOf="@+id/input2"
+        tools:layout_editor_absoluteY="347dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
